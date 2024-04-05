@@ -1,12 +1,21 @@
 let boton = document.querySelector('.btn');
 
-boton.addEventListener('click', saludo);
-boton.addEventListener('click', pregunta);
+boton.addEventListener('click', handleEvent);
 
-function saludo(){
+function handleEvent(event) {
+    switch(event.type) {
+        case 'click':
+            saludo();
+            pregunta();
+            break;
+        // Altres tipus d'esdeveniments poden ser gestionats aquí si cal.
+    }
+}
+
+function saludo() {
     alert('Hola');
 }
 
-function pregunta(){
+function pregunta() {
     confirm('Seguro que quieres continuar?');
 }
