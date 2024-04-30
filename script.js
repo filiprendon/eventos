@@ -1,4 +1,4 @@
-// let boton = document.querySelector(".btn");
+let boton = document.querySelector(".btn");
 
 let numeros = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
 boton.addEventListener("click", handleEvent);
@@ -6,7 +6,6 @@ boton.addEventListener("contextmenu", handleEvent);
 boton.addEventListener("mouseover", handleEvent);
 boton.addEventListener("mouseout", handleEvent);
 document.addEventListener("mousemove", handleEvent);
-// boton.addEventListener("click", handleEvent);
 
 function handleEvent(event) {
   switch (event.type) {
@@ -29,14 +28,6 @@ function handleEvent(event) {
       break;
   }
 }
-// function handleEvent(event) {
-//   switch (event.type) {
-//     case "click":
-//       saludo();
-//       pregunta();
-//       break;
-//   }
-// }
 
 function saludo() {
   alert("Hola");
