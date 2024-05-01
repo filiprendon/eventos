@@ -50,7 +50,7 @@ function moFunc() {
 }
 
 function moveFunc() {
-  boton.textContent = generarNumeroAleatorio();
+  boton.textContent = `${generarNumeroAleatorio()}${generarNumeroAleatorio()}`;
 }
 
 function generarNumeroAleatorio() {
